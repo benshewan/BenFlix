@@ -40,12 +40,10 @@
           env = {};
 
           languages.javascript.enable = true;
-          # languages.javascript.npm.install.enable = true; # only for projects that have their package.json at the same level as flake.nix
+          languages.javascript.npm.install.enable = true; # only for projects that have their package.json at the same level as flake.nix
           # services.mongodb.enable = false;
 
-          scripts."start:watch".exec = "npm --prefix $DEVENV_ROOT/framework run start:watch";
-          scripts."start".exec = "npm --prefix $DEVENV_ROOT/framework run start";
-          scripts."build-framework".exec = "npm --prefix $DEVENV_ROOT/framework run build-all";
+          scripts."start:watch".exec = "npm --prefix $DEVENV_ROOT run dev";
 
           enterShell = ''
             # devenv up
