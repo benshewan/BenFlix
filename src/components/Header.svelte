@@ -1,4 +1,4 @@
 <script>
 </script>
 
-<h1>Benflex</h1>
+<img src="/benflix.png" alt="Benflix" />
